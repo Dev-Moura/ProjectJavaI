@@ -14,10 +14,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @RestController
-@RequestMapping(value = "/Usuario")
+@RequestMapping(value = "/usuario")
 public class UsuarioController {
     
     @Autowired
@@ -29,15 +30,16 @@ public class UsuarioController {
     }
 
     @PostMapping
-    public void inserir(UsuarioDTO usuario) {
+    public void inserir(@RequestBody UsuarioDTO usuario) {
         usuarioService.inserir(usuario);
     }
 
     @PutMapping
-    public UsuarioDTO alterar(UsuarioDTO usuario) {
+        public UsuarioDTO alterar(@RequestBody UsuarioDTO usuario) {
         return usuarioService.alterar(usuario);
     }
 
+    //http://endereco/usuario/{id}
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> excluir(@PathVariable("id") Long id) {
         usuarioService.excluir(id);
