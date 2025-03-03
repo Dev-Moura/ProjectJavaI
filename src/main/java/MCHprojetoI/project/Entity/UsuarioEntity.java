@@ -2,7 +2,7 @@ package MCHprojetoI.project.Entity;
 
 import org.springframework.beans.BeanUtils;
 
-import MCHprojetoI.project.dto.UsuarioDTO;
+import MCHprojetoI.project.DTO.UsuarioDTO;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

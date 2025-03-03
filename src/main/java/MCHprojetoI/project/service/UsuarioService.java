@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import MCHprojetoI.project.Entity.UsuarioEntity;
-import MCHprojetoI.project.dto.UsuarioDTO;
+import MCHprojetoI.project.DTO.UsuarioDTO;
 import MCHprojetoI.project.repository.UsuarioRepository;
 
 @Service
