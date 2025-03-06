@@ -1,4 +1,4 @@
-package MCHprojetoI.project.dto;
+package MCHprojetoI.project.DTO;
 
 import org.springframework.beans.BeanUtils;
 
@@ -23,8 +23,6 @@ public class UsuarioDTO {
     public UsuarioDTO() {
 
     }
-
-
 
 
     public long getId() {

@@ -3,7 +3,7 @@ package MCHprojetoI.project.controller;
 
 import org.springframework.web.bind.annotation.RestController;
 
-import MCHprojetoI.project.dto.UsuarioDTO;
+import MCHprojetoI.project.DTO.UsuarioDTO;
 import MCHprojetoI.project.service.UsuarioService;
 
 import java.util.List;
